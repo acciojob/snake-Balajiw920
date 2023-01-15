@@ -1,2 +1,22 @@
+#gameContainer{
+  position: relative;
+  margin: 0 auto;
+}
+#gameGrid {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pixel {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+}
+.food {
+  background: red;
+}
+.snakeBodyPixel {
+  background: green;
+}
 
 /* Your CSS Code here. */
