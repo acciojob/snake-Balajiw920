@@ -3,25 +3,50 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<div id="gameContainer" style="width:400px; height:400px">
-  <div id="scoreBoard">
-    Score: <span id="score"></span>
+  <div id="gameContainer" style="width: 400px; height: 400px;">
+    <div id="scoreBoard" class="scoreBoard">
+      Score: <span id="score"></span>
+    </div>
+    <div id="gameGrid" class="gameGrid">
+      <!-- 40 x 40 pixels with unique IDs -->
+      <!-- Rows 1-40 -->
+      <div id="pixel0_0" class="pixel"></div>
+      <div id="pixel0_1" class="pixel"></div>
+      <div id="pixel0_2" class="pixel"></div>
+      <!-- ... more pixels ... -->
+      <div id="pixel0_38" class="pixel"></div>
+      <div id="pixel0_39" class="pixel"></div>
+      
+      <!-- Rows 2-39 -->
+      <div id="pixel1_0" class="pixel"></div>
+      <div id="pixel1_1" class="pixel"></div>
+      <div id="pixel1_2" class="pixel"></div>
+      <!-- ... more pixels ... -->
+      <div id="pixel1_38" class="pixel"></div>
+      <div id="pixel1_39" class="pixel"></div>
+      <!-- ... more rows ... -->
+      <div id="pixel38_0" class="pixel"></div>
+      <div id="pixel38_1" class="pixel"></div>
+      <div id="pixel38_2" class="pixel"></div>
+      <!-- ... more pixels ... -->
+      <div id="pixel38_38" class="pixel"></div>
+      <div id="pixel38_39" class="pixel"></div>
+      
+      <!-- Row 40 -->
+      <div id="pixel39_0" class="pixel"></div>
+      <div id="pixel39_1" class="pixel"></div>
+      <div id="pixel39_2" class="pixel"></div>
+      <!-- ... more pixels ... -->
+      <div id="pixel39_38" class="pixel"></div>
+      <div id="pixel39_39" class="pixel"></div>
+    </div>
   </div>
-  <div id="gameGrid">
-    <div id="pixel1" class="pixel"></div>
-    <div id="pixel2" class="pixel"></div>
-    <!--more pixels-->
-  </div>
-</div>
-
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  
+  <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
